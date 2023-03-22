@@ -1,8 +1,12 @@
 package manage;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
@@ -10,6 +14,7 @@ public class ApplicationManager {
     WebDriver wd;
 
     UserHelper user;
+    BoardHelper board;
 
     public void init(){
         ChromeOptions options = new ChromeOptions();
@@ -21,6 +26,9 @@ public class ApplicationManager {
         wd.navigate().to("https://trello.com/");
 
           user = new UserHelper(wd);
+          board= new BoardHelper(wd);
+          user.login("juliakliot.jk@gmail.com","misha240613");
+
 
     }
 
@@ -28,8 +36,14 @@ public class ApplicationManager {
         return user;
     }
 
+    public BoardHelper getBoard() {
+        return board;
+    }
+
     public void quit(){
         wd.close();
         wd.quit();
     }
+
+
 }
