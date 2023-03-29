@@ -1,5 +1,6 @@
 package manage;
 
+import model.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,9 @@ public class BoardHelper extends HelperBase{
 
     public void fillInBoardCreationForm(String title) {
         type(By.cssSelector("[data-testid='create-board-title-input']"),title);
+    }
+    public void fillInBoardCreationForm(Board board) {
+        type(By.cssSelector("[data-testid='create-board-title-input']"),board.getTitle());
     }
 
     public void submitBoardCreation() {
@@ -71,5 +75,22 @@ public class BoardHelper extends HelperBase{
     public void deleteBoard() {
         click(By.cssSelector("[data-testid='close-board-delete-board-button']"));
         click(By.cssSelector("[data-testid='close-board-delete-board-confirm-button']"));
+    }
+
+    public void startBoardCreation() {
+        click(By.cssSelector(".remaining"));
+    }
+
+    public void openBoard() {
+        click(By.cssSelector("[data-testid='close-board-reopen-confirm-button']"));
+        click(By.cssSelector(".Ln0GhM7BZqFQqn"));
+    }
+
+    public void closeCreationWindow() {
+        click(By.cssSelector("[data-testid='popover-close']"));
+    }
+
+    public void returnToCreationPage() {
+        click(By.cssSelector(".Uz5Itgv85sjPQ_"));
     }
 }
