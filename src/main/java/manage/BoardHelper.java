@@ -78,7 +78,8 @@ public class BoardHelper extends HelperBase{
     }
 
     public void startBoardCreation() {
-        click(By.cssSelector(".remaining"));
+       //click(By.cssSelector(".remaining"));
+        click(By.cssSelector(".mod-add"));
     }
 
     public void openBoard() {
