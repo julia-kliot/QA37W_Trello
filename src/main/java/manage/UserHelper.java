@@ -75,4 +75,9 @@ public class UserHelper extends HelperBase {
         wd.switchTo().window((tabs.get(tabs.size()-1)));
 
     }
+
+    public void returnToThello() {
+        List<String>tabs = new ArrayList<>(wd.getWindowHandles());
+        wd.switchTo().window((tabs.get(0)));
+    }
 }
