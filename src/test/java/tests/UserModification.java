@@ -20,7 +20,7 @@ public class UserModification extends TestBase {
 
         Assert.assertTrue(app.getUrl().contains("https://id.atlassian.com/manage-profile/profile-and-visibility"));
         app.getAtlassian().initChangePhoto();
-        app.getAtlassian().uploadPhoto("C:/Users/julia/Documents/QA/QA_Automation/QA/QA37W_Trello/src/test/resources/dog.jpg");
+        app.getAtlassian().uploadPhoto("C:/Users/julia/Documents/QA/QA_Automation/QA/QA37W_Trello/src/test/resources/dogsh.jpg");
         app.getAtlassian().pause(2000);
         app.getUser().returnToThello();
 

@@ -18,9 +18,9 @@ public class AtlassianHelper extends HelperBase{
     }
 
     public void uploadPhoto(String path) {
-        wd.findElement(By.cssSelector("[data-testid='upload-button']")).sendKeys(path);
-        pause(3000);
-        click(By.cssSelector(".css-1tflnq"));
+        wd.findElement(By.cssSelector("#image-input")).sendKeys(path);
+        pause(4000);
+        click(By.cssSelector(".css-1dzrd7w"));
         pause(2000);
     }
 }
