@@ -16,7 +16,7 @@ public class BoardHelper extends HelperBase{
 
     public void initBoardCreationFromHeader() {
         click(By.cssSelector("[data-testid='header-create-menu-button']"));
-        click(By.cssSelector("[aria-label='BoardIcon']")); //[data-testid='header-create-board-button']
+        click(By.cssSelector("[data-testid='header-create-board-button']")); //[aria-label='BoardIcon']
     }
 
     public void fillInBoardCreationForm(String title) {
@@ -48,7 +48,7 @@ public class BoardHelper extends HelperBase{
     }
 
     public int getBoardCount() {
-        return wd.findElements(By.cssSelector(".board-tile-details")).size()-1-recentlyViewed();
+        return wd.findElements(By.cssSelector(".board-tile-details-name")).size()-1-recentlyViewed();
     }
 
     private int recentlyViewed() {
@@ -56,11 +56,11 @@ public class BoardHelper extends HelperBase{
     }
 
     public void clickTheFirstBoard() {
-        click(By.cssSelector(".board-tile-details"));
-    }
+        click(By.cssSelector(".board-tile-details-name"));
+    }//.board-tile-details-name //.board-tile-details
 
     public void openSideBar() {
-        click(By.cssSelector(".show-sidebar-button-react-root"));
+        click(By.cssSelector(".GDunJzzgFqQY_3 "));
     }
 
     public void openMore() {

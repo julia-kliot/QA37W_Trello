@@ -7,7 +7,7 @@ public class BoardDeletion extends TestBase{
     @Test
     public void boardDeletion(){
         app.getBoard().clickTheFirstBoard();
-        app.getBoard().pause(2000);
+        app.getBoard().pause(4000);
         app.getBoard().openSideBar();
         app.getBoard().openMore();
         app.getBoard().closeBoard();
