@@ -6,7 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
 import org.slf4j.Logger;
@@ -23,12 +25,24 @@ public class ApplicationManager {
     ListHelper list;
     CardHelper card;
     AtlassianHelper atlassian;
+    String browser;
+
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
 
     public void init(){
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        wd = new ChromeDriver(options);
-        logger.info("Tests run in Chrome browser");
+        if(browser.equals(Browser.CHROME.browserName())){
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            wd = new ChromeDriver(options);
+            logger.info("Tests run in Chrome browser");
+        }
+        else if (browser.equals(Browser.EDGE.browserName())){
+            wd= new EdgeDriver();
+            logger.info("Tests run in Edge browser");
+        }
+
         WebDriverListener listener = new MyListener();
         wd= new EventFiringDecorator<>(listener).decorate(wd);
         wd.manage().window().maximize();

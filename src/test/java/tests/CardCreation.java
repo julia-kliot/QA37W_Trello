@@ -1,5 +1,6 @@
 package tests;
 
+import manage.MyDataProvider;
 import model.Card;
 import org.testng.annotations.Test;
 
@@ -19,7 +20,7 @@ public class CardCreation extends TestBase{
         app.getBoard().returnToHomePage();
     }
 
-    @Test
+    @Test(dataProvider = "dataCardCSV", dataProviderClass = MyDataProvider.class)
     public void cardCreation2(){
         Card card = Card.builder().cardName("testqa37").color("green").build();
 
