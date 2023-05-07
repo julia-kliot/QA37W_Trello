@@ -56,7 +56,7 @@ public class BoardHelper extends HelperBase{
     }
 
     public void clickTheFirstBoard() {
-        click(By.cssSelector(".board-tile-details-name"));
+        click(By.cssSelector(".board-tile-details"));
     }//.board-tile-details-name //.board-tile-details
 
     public void openSideBar() {

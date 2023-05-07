@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class CardCreation extends TestBase{
 
-    @Test
+    @Test(groups = "group")
     public void cardCreation(){
         Card card = Card.builder().cardName("testqa37").color("green").build();
 
@@ -21,8 +21,8 @@ public class CardCreation extends TestBase{
     }
 
     @Test(dataProvider = "dataCardCSV", dataProviderClass = MyDataProvider.class)
-    public void cardCreation2(){
-        Card card = Card.builder().cardName("testqa37").color("green").build();
+    public void cardCreation2(Card card){
+       // Card card = Card.builder().cardName("testqa37").color("green").build();
 
         app.getBoard().clickTheFirstBoard();
         app.getBoard().pause(3000);

@@ -3,7 +3,7 @@
     <test name="log">
         <classes>
 
-            <class name="tests.CardCreation"/>
+            <class name="tests.CardCreation2"/>
 
 
         </classes>
