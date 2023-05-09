@@ -7,7 +7,9 @@
     </groups>
     <test name="group">
         <classes>
-            <class name="tests.BoardDeletion"/>
+
+            <class name="tests.BoardCreation"/>
+            <class name="tests.CardCreation"/>
         </classes>
     </test>
 </suite>

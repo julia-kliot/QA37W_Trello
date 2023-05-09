@@ -1,0 +1,67 @@
+00:05:20  DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\julia\Documents\QA\QA_Automation\QA\QA37W_Trello\src\test\resources\board.xml"
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 2045031788
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stop()[pri:0, instance:null] 2136378353
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startLogger(java.lang.reflect.Method)[pri:0, instance:null] -68692127
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.finishLog()[pri:0, instance:null] 1549693568
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 2045031788
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stop()[pri:0, instance:null] 2136378353
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startLogger(java.lang.reflect.Method)[pri:0, instance:null] -68692127
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.finishLog()[pri:0, instance:null] 1549693568
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:tests.BoardCreation2@597d179a] 472846254
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE BoardCreation2.boardCreation9()[pri:0, instance:tests.BoardCreation2@597d179a] 848280717
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE BoardCreation2.boardCreation8()[pri:0, instance:tests.BoardCreation2@597d179a] 848280562
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE BoardDeletion2.boardDeletion1()[pri:0, instance:tests.BoardDeletion2@370bcef2] -1909049155
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE BoardDeletion2.boardDeletion2()[pri:0, instance:tests.BoardDeletion2@370bcef2] -1909049186
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stop()[pri:0, instance:tests.BoardCreation2@597d179a] -990377527
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+00:05:20  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+00:05:20  INFO  tests.TestBase - Tests start---boardCreation8
+00:05:20  INFO  tests.TestBase - ********************************************************************************************************
+00:05:20  INFO  tests.TestBase - Tests start---boardCreation9
+00:05:20  INFO  tests.TestBase - ********************************************************************************************************
+00:05:20  INFO  tests.TestBase - Tests start---boardDeletion1
+00:05:20  INFO  tests.TestBase - ********************************************************************************************************
+00:05:20  INFO  tests.TestBase - Tests start---boardDeletion2
+00:05:20  INFO  tests.TestBase - ********************************************************************************************************

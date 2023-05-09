@@ -60,7 +60,7 @@ public class BoardHelper extends HelperBase{
     }//.board-tile-details-name //.board-tile-details
 
     public void openSideBar() {
-        click(By.cssSelector(".GDunJzzgFqQY_3 "));
+        click(By.cssSelector(".GDunJzzgFqQY_3"));
     }
 
     public void openMore() {
